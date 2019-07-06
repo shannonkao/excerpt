@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet"> 
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #name {
+            font-family: 'Karla', sans-serif;
+            font-size: 24pt;
+        }
+        #nickname {
+            text-transform: capitalize;
+            font-family: 'Inconsolata', monospace;
+            font-size: 72pt;
+            margin-bottom: 10px;
+        }
+        
+        .container {
+            max-width: 700px;
+            text-align: center;
+            margin-bottom: 120px;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+        <div id="nickname"></div>
+        <div id="name"></div>
+      </div>
+    <script src="index.js"></script>
+  </body>
+</html>
