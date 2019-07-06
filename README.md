@@ -4,7 +4,7 @@ A random name generator for [Twilight Mirage](http://friendsatthetable.net/categ
 
 ## Demo
 
-[http://excerpt.getforge.io/](http://excerpt.getforge.io/)
+[http://excerpt.surge.sh/](http://excerpt.surge.sh/)
 
 ## Credit
 
