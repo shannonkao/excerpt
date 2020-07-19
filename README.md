@@ -6,8 +6,9 @@ A random name generator for [Twilight Mirage](http://friendsatthetable.net/categ
 
 [http://excerpt.surge.sh/](http://excerpt.surge.sh/)
 
-Temp
+Temporary
 [https://excerpt.netlify.app](https://excerpt.netlify.app)
+
 ## Credit
 
 Uses the [PoetryDB](https://github.com/thundercomb/poetrydb) API to grab random lines from poems.
