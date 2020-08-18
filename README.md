@@ -7,7 +7,7 @@ A random name generator for [Twilight Mirage](http://friendsatthetable.net/categ
 [http://excerpt.surge.sh/](http://excerpt.surge.sh/)
 
 Temporary
-[https://excerpt.netlify.app](https://excerpt.netlify.app)
+[https://excerpt.vercel.app](https://excerpt.vercel.app)
 
 ## Credit
 
