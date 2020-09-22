@@ -26,11 +26,11 @@ xhr.onload = (e) => {
 
 function populateUrls() {
     let urls = [];
-    urls.push('http://poetrydb.org/author,linecount/Shakespeare;14/lines');
-    urls.push('http://poetrydb.org/author/Dickinson/lines');
-    urls.push('http://poetrydb.org/author/Tennyson/lines');
-    urls.push('http://poetrydb.org/author/Keats/lines');
-    urls.push('http://poetrydb.org/author/Bronte/lines');
+    urls.push('https://poetrydb.org/author,linecount/Shakespeare;14/lines');
+    urls.push('https://poetrydb.org/author/Dickinson/lines');
+    urls.push('https://poetrydb.org/author/Tennyson/lines');
+    urls.push('https://poetrydb.org/author/Keats/lines');
+    urls.push('https://poetrydb.org/author/Bronte/lines');
     
     return urls;
 }
