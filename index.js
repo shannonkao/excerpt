@@ -1,6 +1,13 @@
+const URLS = [
+    "poetrydb/shakespeare.json",
+    "poetrydb/dickinson.json",
+    "poetrydb/tennyson.json",
+    "poetrydb/keats.json",
+    "poetrydb/bronte.json",
+];
+
 const xhr = new XMLHttpRequest();
-const urls = populateUrls();
-xhr.open("GET", urls[rand(0, urls.length)]);
+xhr.open("GET", URLS[rand(0, URLS.length)]);
 xhr.send();
 
 const punct_regex = /[~`!@#$%^&*(){}\[\];:"<,.>?\/\\|_+=-]/g;
@@ -13,7 +20,7 @@ xhr.onload = (e) => {
 
     let txt = a_line + (b_line[0] == b_line[0].toUpperCase() && /[a-zA-Z]/i.test(a_line[a_line.length - 1]) ? ". " : " ") + b_line;
     let words = modernize(txt).split(' ');
-    
+
     let dist = Math.floor(words.length/3)
     let name = words.slice(rand(0, dist), (dist, words.length));
 
@@ -22,17 +29,6 @@ xhr.onload = (e) => {
 
     let nickname_div = document.getElementById("nickname");
     nickname_div.innerHTML = "⸢" + nickname(name) + "⸣";
-}
-
-function populateUrls() {
-    let urls = [];
-    urls.push('https://poetrydb.org/author,linecount/Shakespeare;14/lines');
-    urls.push('https://poetrydb.org/author/Dickinson/lines');
-    urls.push('https://poetrydb.org/author/Tennyson/lines');
-    urls.push('https://poetrydb.org/author/Keats/lines');
-    urls.push('https://poetrydb.org/author/Bronte/lines');
-    
-    return urls;
 }
 
 function getLine(poem) {
